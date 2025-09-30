@@ -1,6 +1,6 @@
 
 clear; 
-close(windisd());
+close(windsid());
 clc; 
 
 // Defino el directorio
@@ -92,8 +92,9 @@ for i = 1:n_test
 end
 
 //Grafico
-close(windisd());
+close(windsid());
 plot(pred, '-r')
 plot(precio_DL, 'b-')
+
 
 
