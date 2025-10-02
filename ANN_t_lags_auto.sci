@@ -53,7 +53,7 @@ lr = 0.05;
 factivIH = "ann_purelin_activ";
 factivHH = "ann_purelin_activ";
 factivHO = "ann_purelin_activ";
-epocas = 5000
+epocas = 10000
 
 // Entreno modelo
 scf(2);
@@ -97,6 +97,7 @@ scf(3);
 plot(pred, 'r-')
 plot(precio_DL, 'b-')
 legend(["Proyectado", "Observado"], 3);
+
 
 
 
