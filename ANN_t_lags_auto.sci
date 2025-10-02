@@ -60,7 +60,7 @@ scf(2);
 W = ann_FFBP_gda(train_DL', precio_DL', N, [factivIH, factivHO], lr, [], [], epocas, [], [], []);
 
 
-// estimo la serie que predice
+// estimo la serie que predice incorporando nueva bd completa, para proyectar hacia meses sin precio observado
 
 proy = datos_n(:,2:size(datos_n,2)); // data frame recortando los últimos t valores, que se quedan sin precio asignado
 
@@ -97,5 +97,6 @@ scf(3);
 plot(pred, 'r-')
 plot(precio_DL, 'b-')
 legend(["Proyectado", "Observado"], 3);
+
 
 
